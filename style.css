@@ -72,3 +72,70 @@ button:hover {
 button:active {
     transform: scale(0.9);
 }
+
+.btn-fade {
+    transition: all 0.3s ease-out 0.2s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+header {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.btn-arrow {
+    border: none;
+}
+
+.btn-arrow:hover {
+    background-color: transparent;
+    color: transparent;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: all 1s ease-out 0.2s;
+    visibility: hidden;
+    opacity: 0;
+    clip-path: circle(0% at 0% 0%);
+}
+
+.main-active {
+    transition: all 0.5s ease-out;
+    visibility: visible;
+    opacity: 1;
+    clip-path: circle(90.0% at 50% 50%);
+}
+
+main h1 {
+    font-size: 220px;
+    font-weight: 100;
+    letter-spacing: -17px;
+    line-height: 154px;
+}
+
+main h2 {
+    font-size: 84px;
+    margin-left: 12px;
+    font-weight: 200;
+}
+
+main h2 span {
+    font-weight: 900;
+}
+
+main h3 {
+    font-size: 54px;
+    font-weight: 200;
+    margin-left: 12px;
+}
+
+main h3 span {
+    font-weight: 900;
+}
